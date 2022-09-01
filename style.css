@@ -5,3 +5,19 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(6, 20, 55, 1), rgba(0, 0, 0, 1)) ;
+}
+/*  */
+section {
+    padding-top: 62px;
+}
+.menu {
+    
+    padding: 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
