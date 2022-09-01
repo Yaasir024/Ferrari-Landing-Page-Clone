@@ -28,10 +28,10 @@ section {
   position: relative;
 }
 .hamburger {
-    position: absolute;
-    top: 50px;
-    left: 40px;
-    cursor: pointer;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  cursor: pointer;
 }
 .menu {
   display: flex;
@@ -93,16 +93,16 @@ section {
   padding-top: 8px;
 }
 .credit {
-    position: absolute;
-    writing-mode: vertical-lr;
-    bottom: 50px;
-    right: 30px;
-    display: flex;
-    flex-direction: row;
+  position: absolute;
+  writing-mode: vertical-lr;
+  bottom: 50px;
+  right: 30px;
+  display: flex;
+  flex-direction: row;
 }
 .credit a {
-    margin-top: 10px;
-    color: #ffffff;
+  margin-top: 10px;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 630px) {
@@ -130,6 +130,19 @@ section {
     font-size: 80px;
   }
   .credit {
-    right: 12px;
-}
+    writing-mode: horizontal-tb;
+    bottom: 50px;
+    align-items: center;
+  }
+  .credit a {
+    margin-top: 0;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+  .options {
+    bottom: 135px;
+  }
+  .options .item:not(:last-of-type) {
+    margin-right: 10px;
+  }
 }
