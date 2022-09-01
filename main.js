@@ -8,4 +8,4 @@ animation
     .from("#sub-title", { duration: 1 ,x: 850 }, "<")
     .from("#car", { duration: 2 ,x: -1200 } )
     .from(".item", { duration: 1 ,y: 900, stagger: .3 }, 1.8 )
-    .from(".hamburger", { duration: 1.5 ,opacity: 0, scale: 0})
+    .from(".hamburger", { duration: 1 ,opacity: 0, scale: 0})
