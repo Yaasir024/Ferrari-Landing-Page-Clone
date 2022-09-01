@@ -9,3 +9,4 @@ animation
     .from("#car", { duration: 2 ,x: -1200 } )
     .from(".item", { duration: 1 ,y: 900, stagger: .3 }, 1.8 )
     .from(".hamburger", { duration: 1 ,opacity: 0, scale: 0})
+    .from(".credit", { duration: 2.6 ,opacity: 0}, 3)

@@ -92,6 +92,18 @@ section {
   text-align: center;
   padding-top: 8px;
 }
+.credit {
+    position: absolute;
+    writing-mode: vertical-lr;
+    bottom: 50px;
+    right: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.credit a {
+    margin-top: 10px;
+    color: #ffffff;
+}
 
 @media only screen and (max-width: 630px) {
   section {
@@ -117,4 +129,7 @@ section {
   .content h3 {
     font-size: 80px;
   }
+  .credit {
+    right: 12px;
+}
 }
