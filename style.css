@@ -12,22 +12,37 @@
 body {
   height: 100vh;
   background-image: linear-gradient(rgba(6, 20, 55, 1), rgba(0, 0, 0, 1));
+  color: #ffffff;
+  overflow: hidden;
 }
 /*  */
 section {
-  padding-top: 62px;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 42px 45px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.hamburger {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    cursor: pointer;
 }
 .menu {
-  padding: 0 45px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .content {
-    max-width: 470px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 80px;
+  max-width: 470px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
 }
 .content h1 {
   color: #ffffff;
@@ -37,13 +52,69 @@ section {
   /* color: #FFFFFF; */
   font-size: 110px;
   font-weight: 200;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  background: -webkit-linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .car-container {
-    text-align: center;
+  text-align: center;
 }
 .car {
-    height: 180px;
+  max-height: 180px;
+  width: 100%;
+}
+.options {
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 920px;
+  margin: 0 auto;
+  margin-top: auto;
+}
+.options .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.options .item:not(:last-of-type) {
+  margin-right: 20px;
+}
+.options .item .icon {
+  width: 48px;
+  height: 48px;
+}
+.options .item .details {
+  text-align: center;
+  padding-top: 8px;
+}
+
+@media only screen and (max-width: 630px) {
+  section {
+    padding-top: 60px;
+  }
+  .car-container {
+    max-width: 425px;
+  }
+  .content h1 {
+    font-size: 60px;
+  }
+  .content h3 {
+    font-size: 80px;
+  }
+  .options .item:nth-child(even) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 435px) {
+  .content h1 {
+    font-size: 50px;
+  }
+  .content h3 {
+    font-size: 80px;
+  }
 }
