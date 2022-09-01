@@ -1,23 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap");
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 body {
-    height: 100vh;
-    background-image: linear-gradient(rgba(6, 20, 55, 1), rgba(0, 0, 0, 1)) ;
+  height: 100vh;
+  background-image: linear-gradient(rgba(6, 20, 55, 1), rgba(0, 0, 0, 1));
 }
 /*  */
 section {
-    padding-top: 62px;
+  padding-top: 62px;
 }
 .menu {
-    
-    padding: 0 45px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  padding: 0 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content {
+    max-width: 470px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+}
+.content h1 {
+  color: #ffffff;
+  font-size: 82px;
+}
+.content h3 {
+  /* color: #FFFFFF; */
+  font-size: 110px;
+  font-weight: 200;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.car-container {
+    text-align: center;
+}
+.car {
+    height: 180px;
 }
